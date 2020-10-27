@@ -6,6 +6,9 @@ body {
 .py-2 {
   padding: 2rem 0;
 }
+.py-3 {
+  padding: 3rem;
+}
 
 #header {
   padding: 14px 0;
@@ -18,7 +21,7 @@ body {
 }
 
 #header.header-scrolled {
-  background: rgba(4, 9, 30, 0.9);
+  background: rgba(4, 9, 30, 0.3);
   transition: all 0.5s;
 }
 
@@ -35,7 +38,7 @@ body {
 #header #logo h1 a:hover {
   color: #fff;
   padding-left: 10px;
-  border-left: 4px solid #235ee7;
+  border-left: 4px solid #dc1515;
 }
 
 #header #logo img {
@@ -58,12 +61,8 @@ body {
 }
 
 .dark-overlay {
-  /* position: absolute; */
-  top: 0;
-  left: 0;
   width: 100%;
-  /* min-height: 700px; */
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 2000px) {
@@ -73,7 +72,7 @@ body {
 }
 
 .banner-content {
-  margin-top: 50px;
+  margin-top: 10rem;
   margin-right: 9rem;
   text-align: start;
 }
@@ -359,6 +358,24 @@ body {
   object-fit: cover;
 }
 
+.buttons {
+  display: flex;
+  align-content: space-between;
+  padding: 4rem 2rem 0 2rem;
+}
+
+.buttons a {
+  padding: 2rem 7rem 0 7rem;
+  color: #fff;
+}
+
+.buttons a:hover {
+  background: #dc1515;
+  color: #fff;
+  text-decoration: none;
+  padding: 3rem 7rem;
+}
+
 #services {
   background: #f7f7f7;
   position: relative;
@@ -414,13 +431,21 @@ body {
 }
 
 .services-carousel .owl-dot.active {
-  background-color: #b8a07e;
+  background-color: #dc1515;
 }
 
 .form-section {
   border: 0;
   box-shadow: none;
   border-bottom: 2px solid #3d160a7f;
+}
+
+#authors .card:hover {
+  background: #dc1515;
+  color: #fff;
+}
+#authors .fab {
+  color: #fff;
 }
 
 #video-play {
@@ -459,6 +484,14 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.5rem;
+}
+
+#main-footer .footer-container > *:last-child {
+  background: #444;
+  grid-column: 1 / span 4;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.75rem;
 }
 
 @media (max-width: 600px) {
